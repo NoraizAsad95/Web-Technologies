@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .relative {
+      position: relative;
+      background-size: cover
+    }
+
+    .wrappernav {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-size: medium;
+      color: red;
+      font-weight: bolder;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-left: 90px;
+    }
+
+    .navitems {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding-left: 400px;
+      padding-top: 10px;
+    }
+
+    .navitems a {
+      text-decoration: none;
+      color: red;
+    }
+
+    .navitems a:hover {
+      border-bottom: 1px solid #fff;
+    }
+
+    .navbutton {
+
+      margin-top: 5px;
+
+      margin-left: 35px;
+    }
+
+    .absolute-1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .absolute-2 {
+      position: absolute;
+      top: 65%;
+      left: 42%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+    }
+
+    .absolute-3 {
+      position: absolute;
+      top: 65%;
+      left: 58%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+    }
+
+    .absolute {
+      position: absolute;
+
+      top: 30%;
+      /* Position the text vertically at the middle */
+      left: 50%;
+      /* Position the text horizontally at the middle */
+      transform: translate(-50%, -50%);
+      /* Center the text precisely */
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+      /* Semi-transparent background for better readability */
+      padding: 10px;
+    }
+
+    .nav-absolute {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+    }
+
+    .navbar {
+      background-color: transparent !important;
+      /* Override Bootstrap default background color */
+    }
+
+    .wrapper {
+      display: flex;
+      border: 0px;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .wrapper-1 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box-1 {
+      background-color: rgb(236, 78, 78);
+      margin: 5px;
+      width: 220px;
+      height: 220px;
+      margin-left: 250px;
+      color: white;
+      padding-left: 35px;
+    }
+
+    .box-2 {
+      background-color: rgb(27, 37, 34);
+      width: 220px;
+      height: 220px;
+      margin: 5px;
+      padding-left: 35px;
+      color: white;
+    }
+
+    .absolute-4 {
+      position: absolute;
+      top: 90%;
+    }
+
+    .fa-gear {
+      font-size: 30px;
+    }
+
+    .fa-font-awesome {
+      font-size: 30px;
+    }
+
+    .fa-shield {
+      font-size: 30px;
+    }
+
+    .fa-cube {
+      font-size: 30px;
+      padding-top: 35px;
+      padding-bottom: 20px;
+    }
+
+    .bottom-border {
+      height: 2px;
+      width: 1cm;
+      background-color: white;
+
+    }
+
+    .p1 {
+      padding-top: 10px;
+      padding-right: 20px;
+      font-size: x-small;
+    }
+
+    .p2 {
+      padding-left: 50%;
+      font-size: x-small;
+      font-weight: 700;
+      color: rgb(236, 78, 78);
+      padding-top: 30px;
+    }
+
+    .p3 {
+      padding-left: 32%;
+      font-size: x-small;
+      padding-right: 32%;
+      text-align: center;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-family: sans-serif;
+      font-size: larger;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      padding-right: 25%;
+      padding-left: 30%;
+      font-weight: 700;
+    }
+
+    .hi {
+      height: 200px;
+      border: "";
+    }
+
+    .card {
+      margin-top: 35px;
+      background-color: #fff;
+      flex-basis: 280px;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      border: 0px;
+      margin-right: 1px;
+      font-size: small;
+    }
+
+    .card:hover {
+      background-color: rgb(66, 66, 66);
+      color: white;
+      transform: scale(1);
+      transition: all 1s ease;
+    }
+
+    .newdiv {
+      background-color: rgb(27, 37, 34);
+      padding: 35px;
+      margin-top: 70px;
+      padding-right: 0;
+      width: 1100px;
+      margin-left: 30px;
+    }
+
+    .newdiv-2 {
+      width: 500px;
+      padding-top: 40px;
+      padding-left: 35px;
+      padding-right: 15px;
+    }
+
+    .h3-1 {
+      font-weight: 700;
+      color: #fff;
+      font-size: x-large;
+    }
+
+    .para {
+      color: #fff;
+      padding-top: 20px;
+      font-size: small;
+    }
+
+    .image {
+      padding-right: 15px;
+      padding-left: 40px;
+    }
+
+    .box-3 {
+      width: 160px;
+      height: 250px;
+      border: 0px;
+      background-color: red;
+      margin-top: 47px;
+    }
+
+    .bottomdiv {
+      width: 1100px;
+      margin-left: 30px;
+      background-color: whitesmoke;
+      padding-bottom: 60px;
+    }
+
+    .wrapper-2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      box-sizing: border-box;
+    }
+
+    .phead {
+      font-weight: bolder;
+
+    }
+
+    .sub-div {
+      width: 200px;
+      margin-top: 110px;
+      border: 0px;
+      ;
+      margin-left: 140px;
+      font-size: small;
+
+    }
+
+    .sub-div-1 {
+      width: 200px;
+      margin-top: 110px;
+      border: 0px;
+      font-size: small;
+    }
+
+    .sub-div-2 {
+      width: 320px;
+      margin-top: 110px;
+      border: 0px;
+      ;
+    }
+
+    .sub-para {
+      font-size: smaller;
+      color: rgb(154, 165, 171);
+    }
+
+    .fleximg {
+      padding: 90px;
+    }
+
+    .wrapper-3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+
+    }
+
+
+    .wrapperhead {
+      display: inline-block;
+
+    }
+
+    .wrapperhead {
+      padding: 15px;
+      margin-left: 195px;
+      padding-bottom: 20px;
+    }
+
+    .wrapperhead a {
+      color: black;
+      text-decoration: none;
+      margin-right: 30px;
+      font-size: small;
+    }
+
+    .wrapperhead a:hover {
+      background-color: transparent;
+      border-bottom: 2px solid black;
+    }
+
+    .divcont {
+      padding-right: 90px;
+      padding-left: 180px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    .wrapper-4 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .headcont {
+      font-weight: 700;
+      font-size: x-large;
+
+    }
+
+    .paracont {
+
+      font-size: small;
+
+    }
+
+    .video {
+      width: 30%;
+    }
+
+    .sub-div-4 {
+      width: 350px;
+
+    }
+
+    .divicon {
+      background-color: rgb(27, 37, 34);
+      padding-right: 90px;
+      padding-left: 160px;
+      padding-top: 50px;
+      padding-bottom: 40px;
+      margin-top: 60px;
+
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    .iconpara {
+      color: #fff;
+      font-size: small;
+      text-align: right;
+      padding-left: 100px;
+    }
+
+    .wrapper-5 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 90px;
+    }
+
+    .fa-yahoo {
+      font-size: 90px;
+      color: #fff;
+    }
+
+    .fa-wordpress {
+      font-size: 100px;
+      color: #fff;
+    }
+
+    .iconhead {
+      color: #fff;
+      font-size: x-large;
+      font-weight: bolder;
+      text-align: right;
+    }
+
+    .fa-digg {
+      font-size: 100px;
+      color: #fff;
+    }
+
+    .fa-css3-alt {
+      font-size: 100px;
+      color: #fff;
+    }
+
+    .form {
+      padding-right: 90px;
+      padding-left: 160px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .formhead {
+
+      font-size: x-large;
+      font-weight: bolder;
+      text-align: right;
+    }
+
+    .sub-div-5 {
+      width: 300px;
+
+    }
+
+    .formpara {
+      font-size: small;
+      text-align: right;
+    }
+
+    .wrapper-6 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+    }
+
+    .button1 {
+      background-color: rgb(226, 31, 70);
+      width: 80%;
+      color: #fff;
+      border: transparent;
+      margin-left: 25px;
+
+    }
+
+    .footer {
+      background-color: rgb(27, 37, 34);
+      margin-top: 20px;
+      padding-right: 90px;
+      padding-left: 160px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .wrapper-7 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .foothead {
+      font-weight: bolder;
+      color: #fff;
+      font-size: medium;
+    }
+
+    .footernav {
+      padding-left: 310px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footernav a {
+      color: #fff;
+      text-decoration: none;
+
+      font-size: small;
+
+    }
+
+    .footernav a:hover {
+      border-bottom: 1px solid red;
+
+    }
+
+    .footpara {
+      color: #fff;
+      font-size: small;
+    }
+
+    .footinput {
+
+      margin-left: 12%;
+    }
+
+    .fa-google {
+      padding-top: 30px;
+      color: crimson;
+    }
+
+    .fa-twitter {
+      padding-top: 30px;
+      padding-left: 30px;
+      color: crimson;
+    }
+
+    .fa-facebook-f {
+      padding-top: 30px;
+      padding-left: 30px;
+      color: crimson;
+    }
+
+    .fa-linkedin-in {
+      padding-top: 30px;
+      padding-left: 30px;
+      color: crimson;
+    }
+
+    .res {
+      font-size: small;
+      padding-left: 390px;
+      color: rgb(159, 154, 154);
+    }
+  </style>
+
+<body>
+  <div class="relative">
+    <img src="images/TM1.jpg" width="100%" height="500px">
+    <div class="nav-absolute">
+      <div class="wrappernav">
+        <div class="logo">
+          <h1>MSoft.</h1>
+        </div>
+        <div class="navitems">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Features</a>
+          <a href="#">About us</a>
+        </div>
+        <div class="navbutton">
+          <button class="btn btn-success">Log In</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute">
+      <p>Helping Business and Companies innovative Transform and Lead</p>
+    </div>
+    <div class="absolute-1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pharetra interdum mi ut laoreet. Quisque
+        molestie cursus neque non consectetur. Proin malesuada eget velit nec venenatis. Proin ultricies felis non
+        maximus interdum. </p>
+    </div>
+    <div class="absolute-2">
+      <button type="submit" class="btn btn-light">Start</button>
+    </div>
+    <div class="absolute-3">
+      <button type="submit" class="btn btn-light">Search</button>
+    </div>
+  </div>
+  <div class="absolute-4">
+    <div class="wrapper container">
+      <div class="box-1 p1">
+        <i class="fa-solid fa-cube"></i>
+        <p><b>Content Concept & Strategy</b></p>
+        <div class="bottom-border"></div><br>
+        <p>Mauris maximus purus eros, consectetur dictum turpis ullamcorper vel.
+          Class aptent taciti sociosqu ad litora torquent.</p>
+      </div>
+      <div class="box-2 p1">
+        <i class="fa-solid fa-cube"></i>
+        <p><b>Content Concept & Strategy</b></p>
+        <div class="bottom-border"></div><br>
+        <p>Mauris maximus purus eros, consectetur dictum turpis ullamcorper vel.
+          .</p>
+      </div>
+      <div class="box-2 p1">
+        <i class="fa-solid fa-cube"></i>
+        <p><b>Content Concept & Strategy</b></p>
+        <div class="bottom-border"></div><br>
+        <p>Mauris maximus purus eros, consectetur dictum turpis ullamcorper vel.
+          .</p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="hi"></div>
+
+  <div class="p2">
+    <p>SERVICES</p>
+  </div>
+  <h2>Best Services for Visual Perfection</h2>
+  <div class="p3 pt-2">
+    <p>Vivamus tempor pharetra imperdiet. Aenean odio massa,
+      accumsan in nisl ut, venenatis semper quam. Integer quis blandit nisi, quis tincidunt mi. </p>
+  </div>
+
+  <!---card-->
+
+  <div class="wrapper">
+    <div class="card">
+      <i class="fa-solid fa-gear"></i>
+      <h3>Strategy</h3>
+      <p>Nunc rhoncus felis nisi, ut porta ipsum sollicitudin id.Nunc rhoncus felis nisi, ut porta.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-shield"></i>
+      <h3>Marketing</h3>
+      <p>Nunc rhoncus felis nisi, ut porta ipsum sollicitudin id.Nunc rhoncus felis nisi, ut porta.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-font-awesome"></i>
+      <h3>Technology</h3>
+      <p>Nunc rhoncus felis nisi, ut porta ipsum sollicitudin id.Nunc rhoncus felis nisi, ut porta.</p>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="card">
+      <i class="fa-solid fa-gear"></i>
+      <h3>Strategy</h3>
+      <p>Nunc rhoncus felis nisi, ut porta ipsum sollicitudin id.Nunc rhoncus felis nisi, ut porta.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-shield"></i>
+      <h3>Marketing</h3>
+      <p>Nunc rhoncus felis nisi, ut porta ipsum sollicitudin id.Nunc rhoncus felis nisi, ut porta.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-font-awesome"></i>
+      <h3>Technology</h3>
+      <p>Nunc rhoncus felis nisi, ut porta ipsum sollicitudin id.Nunc rhoncus felis nisi, ut porta.</p>
+    </div>
+  </div>
+  <!---textimg-->
+  <div class=" newdiv">
+    <div class="wrapper-1">
+      <div class="newdiv-2">
+        <div class="h3-1">
+          <h3>Detailed business planed & the most effective results</h3>
+        </div>
+        <div class="para">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis nulla et libero fermentum, id
+            posuere nisi finibus.</p>
+        </div>
+        <div class="pt-3">
+          <button type="submit" class="btn btn-outline-light">Start Now</button>
+        </div>
+      </div>
+
+      <div class=" image pt-5">
+        <img src="images/download.jpeg" height="250px">
+      </div>
+
+      <div class="box-3"></div>
+
+    </div>
+  </div>
+
+  <!--bottomDiv-->
+  <div class="bottomdiv">
+    <div class="wrapper-2">
+      <div class="sub-div">
+        <b>
+          <p>01.Elegant/unique Design</p>
+        </b>
+        <div class="sub-para">
+          <p>Integer ac lobortis est, at mollis elit. Phasellus eget lobortis elit, non pulvinar velit.
+            Mauris maximus purus eros, consectetur dictum turpis ullamcorper vel.
+        </div>
+        </p>
+        <b>
+          <p>03.Different layout Type</p>
+        </b>
+        <div class="sub-para">
+          <p>Integer ac lobortis est, at mollis elit. Phasellus eget lobortis elit, non pulvinar velit.
+            Mauris maximus purus eros, consectetur dictum turpis ullamcorper vel.
+        </div>
+      </div>
+      <div class="sub-div-1">
+        <b>
+          <p>02.Elegant/unique Design</p>
+        </b>
+        <div class="sub-para">
+          <p>Integer ac lobortis est, at mollis elit. Phasellus eget lobortis elit, non pulvinar velit.
+            Mauris maximus purus eros, consectetur dictum turpis ullamcorper vel.
+        </div>
+        <b>
+          <p>04.Different layout Type</p>
+        </b>
+        <div class="sub-para">
+          <p>Integer ac lobortis est, at mollis elit. Phasellus eget lobortis elit, non pulvinar velit.
+            Mauris maximus purus eros, consectetur dictum turpis ullamcorper vel.</p>
+        </div>
+      </div>
+      <div class="sub-div-2">
+
+        <div class="phead">
+          <h4>We provide high quality and cost effective services.</h4>
+        </div>
+        <div class="sub-para">
+          <p>Nunc rhoncus felis nisi, ut porta ipsum sollicitudin id.Nunc rhoncus felis nisi, ut porta.
+            Integer ac lobortis est, at mollis elit. Phasellus eget lobortis elit, non pulvinar velit.
+          </p>
+          <p>Integer ac lobortis est, at mollis elit. Phasellus eget lobortis elit, non pulvinar velit.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--fleximages-->
+  <div class="fleximg">
+    <div class="wrapperhead">
+      <a href="#">ALL</a>
+      <a href="#">WEB</a>
+      <a href="#">ADVERTISING</a>
+      <a href="#">BRANDING</a>
+      <a href="#">DESIGN</a>
+      <a href="#">PHOTOGRAPHY</a>
+    </div>
+
+    <div class="wrapper-3">
+      <img src="images/istanbul.jpg" width="190px" height="190px">
+      <img src="images/kuala lampur.jpg" width="190px" height="190px">
+      <img src="images/londonculture.jpg" width="190px" height="190px">
+      <img src="images/istanbulculture.jpg" width="190px" height="190px">
+    </div>
+    <div class="wrapper-3 pt-2">
+      <img src="images/istanbul.jpg" width="190px" height="190px">
+      <img src="images/kuala lampur.jpg" width="190px" height="190px">
+      <img src="images/londonculture.jpg" width="190px" height="190px">
+      <img src="images/istanbulculture.jpg" width="190px" height="190px">
+    </div>
+  </div>
+
+  <!--textvideo-->
+  <div class="divcont">
+    <div class="wrapper-4">
+      <div class="sub-div-4">
+        <div class="headcont">
+          <h3>We are trusted by
+            <br>more than 3600+ clients
+          </h3>
+        </div>
+
+        <div class="paracont">
+          <p>Ut at orci neque. Nam nunc velit, ultrices id faucibus ac, tincidunt in ex.
+            Ut interdum lorem lorem, id efficitur tellus dictum posuere.</p>
+          <button type="button" class="btn btn-primary">Learn More</button>
+        </div>
+      </div>
+      <iframe width="350px"  src="https://www.youtube.com/embed/Hw_yg33s_80?si=h-IZ6oioHsgvgUgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!--iconsdiv-->
+  <div class="divicon">
+    <div class="wrapper-5">
+
+      <i class="fa-brands fa-yahoo"></i>
+      <i class="fa-brands fa-wordpress"></i>
+
+      <div class="iconhead">
+        <h3>Clients with project proudly <br>crafted by our agency.</h3>
+      </div>
+
+    </div>
+    <div class="wrapper-5 pt-5">
+      <i class="fa-brands fa-digg"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <div class="iconpara">
+        <p>Ut at orci neque. Nam nunc velit, ultrices<br> id faucibus ac, tincidunt in ex.
+          Ut interdum lorem<br> lorem, id efficitur tellus dictum posuere.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--form-->
+  <div class="form">
+    <div class="wrapper-6">
+      <div class="sub-div-5">
+        <div class="formhead">
+          <h3>Wants to have professional project?<br>Let's talk about it</h3>
+        </div>
+        <div class="formpara">
+          <p>Ut at orci neque. Nam nunc velit, ultrices<br> id faucibus ac, tincidunt in ex.
+            Ut interdum lorem<br> lorem, id efficitur tellus dictum posuere.</p>
+          <p>Ut at orci neque. Nam nunc velit, ultrices<br> id faucibus ac, tincidunt in ex.
+            Ut interdum lorem.</p>
+        </div>
+      </div>
+      <form action="" method="post">
+        <div>
+          <label for="fname">FirstName:</label><br>
+          <input type="text" id="fname" name="firstName" size="60px"><br><br>
+        </div>
+        <div>
+          <label for="lname">LastName:</label><br>
+          <input type="text" id="lname" name="lastName" size="60px"><br><br>
+        </div>
+        <div>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" size="60px"><br><br>
+          <label for="password">Password</label><br>
+          <input type="password" id="text" size="60px"><br><br>
+        </div>
+
+      </form>
+    </div>
+    <button class="button button1">Submit</button>
+  </div>
+
+  <!--footer-->
+  <div class="footer">
+    <div class="wrapper-7">
+      <div class="foothead">
+        <h4>MSoft.</h4>
+      </div>
+      <div class="footernav">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Works</a>
+        <a href="#">About us</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="wrapper-7 pt-4">
+      <div class="footpara">
+        <b>
+          <p>Contact</p>
+        </b>
+        <p>email@adddress.com,+123-555-78S</p>
+      </div>
+      <div class="footinput">
+        <input type="search" class="footinput" placeholder="search" size="60px">
+      </div>
+    </div>
+    <div class="wrapper-7 pt-4">
+      <i class="fa-brands fa-google"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <div class="res pt-4">
+        <p>2019.All right reserved.Buy kallyas wrodpress theme. </p>
+      </div>
+    </div>
+
+  </div>
+</body>
