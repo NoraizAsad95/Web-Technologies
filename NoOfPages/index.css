@@ -1,0 +1,287 @@
+.navitems
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 320px;
+    padding-top: 20px; 
+}
+.navitems a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navitems a:hover {
+    color:  chocolate;
+  }
+
+.wrapper
+{
+   position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 100%;
+}
+
+.h1
+{
+    color: chocolate;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.search
+{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.h2{
+    color: chocolate;
+    padding-left:20px ;
+    padding-top: 200px;
+}
+
+.h2-1{
+    color: chocolate;
+}
+.p1
+{
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.p2
+{
+    font-size: small;
+}
+.content
+{
+    padding-top:50px ;
+    padding-left: 20px;
+}
+.edu
+{
+    padding-top: 20px;
+    color:goldenrod;
+}
+
+.wrapper-1
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myimg
+{
+    border-radius: 50%;
+}
+
+.myimg-1
+{
+    padding-left: 310px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.intro
+{
+    background-color: whitesmoke;
+}
+
+.wrapper-2
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    flex-basis: 250px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: small; 
+    position: relative;
+  }
+  
+  .image {
+    background-color: aquamarine;
+    height: 120px;
+    background-size: cover;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 0 0;
+  }
+  .car1 {
+    background-image: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_CPP.jpg");
+  }
+  .car2 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HVNHQmF6XqXS0xqpvfcJFY3cQIAQEB3XmJ_edOZdMQ&s");
+  }
+  .car3 {
+    background-image: url("https://kinsta.com/wp-content/uploads/2023/06/css-image-styling.jpg");
+  }
+  .skill
+  {
+   margin-top: 80px;
+  }
+
+  .h2-2
+  {
+    padding-left: 20px;
+    color: chocolate;
+  }
+  .h2-3
+  {
+    padding-top: 45px;
+    padding-left: 20px;
+    color: chocolate;
+  }
+
+  .wrapper-3
+  {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hob
+  {
+    margin-top: 100px;
+    background-color:aliceblue;
+    padding-bottom: 55px;
+    border-bottom: 1px solid blue;
+
+  }
+  .list
+  {
+    margin-left: 130px;
+    margin-top: 80px;
+    color: goldenrod;
+    border-right: 1px solid chocolate;
+    padding-right: 35px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  .img-container
+  {
+    padding-left: 70px;
+    padding-top: 50px;
+  }
+  .img-container img{
+    border-radius: 50%;
+  }
+
+  .h2-4
+  {
+    padding-top: 45px;
+    padding-left: 20px;
+    color: chocolate;
+  }
+
+  .amb
+  {
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .goal
+  {
+    border-right: 1px solid chocolate;
+    width: 300px;
+    height: 180px;
+    margin-left: 250px;
+    margin-top: 80px;
+    font-size: small;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    
+  }
+
+  .wrapper-4
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .goal-flex
+  {
+    padding-left: 250px;
+    padding-top: 100px;
+    color: chocolate;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .footer {
+    background-color: rgb(27, 37, 34);
+    padding-right: 90px;
+    padding-left: 160px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    border-top: 4px solid chocolate;
+  }
+
+  .fa-instagram
+  {
+    font-size: 40px;
+    color: #fff;
+  }
+  .fa-linkedin
+  {
+    font-size: 40px;
+    color: blue;
+  }
+
+  .wrapper-5
+  {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+  }
+
+  .footpara
+  {
+    color: #fff;
+    font-size: small;
+  }
+
+  .res
+  {
+    padding-top: 30px;
+    font-size: small;
+    padding-left: 480px;
+    color: rgb(159, 154, 154);
+  }
+
+  .wrapper-6
+  {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .foot-button
+  {
+    background-color: orangered;
+    border: transparent;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5%;
+    width: 60px;
+  }
+  .button
+  {
+    padding-left: 700px;
+    border: transparent;
+  }
+
+  .foothead
+  {
+    padding-bottom: 50px;
+    color: chocolate;
+  }

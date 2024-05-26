@@ -1,0 +1,157 @@
+.navitems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 350px;
+    padding-top: 20px;
+}
+
+.navitems a {
+    text-decoration: none;
+    color: black;
+}
+
+.navitems a:hover {
+    color: chocolate;
+}
+
+.wrapper {
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+}
+
+.h1 {
+    color: chocolate;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.search {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+
+.form{
+    padding-top: 20px;
+    margin-left: 100px;
+}
+.h2
+{
+    padding-left: 400px;
+    padding-top: 120px;
+    color: black;
+    font-weight: bolder;
+    font-family: monospace;
+}
+.formhead{
+    padding-top: 100px;
+    margin-left: 100px;
+}
+
+.h3
+{
+    margin-left: 100px;
+    padding-top: 90px;
+}
+
+.p
+{
+    margin-left: 100px;
+    padding-top: 20px;
+    font-size: small;
+    font-weight:500;
+}
+
+body
+{
+    background-color: aliceblue;
+}
+
+.footer {
+    background-color: rgb(27, 37, 34);
+    padding-right: 90px;
+    padding-left: 160px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    border-top: 4px solid chocolate;
+    margin-top: 140px;
+  }
+
+  .fa-instagram
+  {
+    font-size: 40px;
+    color: #fff;
+  }
+  .fa-linkedin
+  {
+    font-size: 40px;
+    color: blue;
+  }
+
+  .wrapper-6
+  {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+  }
+
+  .footpara
+  {
+    color: #fff;
+    font-size: small;
+  }
+
+  .res
+  {
+    padding-top: 30px;
+    font-size: small;
+    padding-left: 440px;
+    color: rgb(159, 154, 154);
+  }
+
+  .wrapper-7
+  {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .foot-button
+  {
+    background-color: orangered;
+    border: transparent;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5%;
+    width: 70px;
+  }
+
+  .foot-button-1
+  {
+    background-color: orangered;
+    border: transparent;
+    color: #fff;
+    padding: 6px;
+    margin-right: 10px;
+    border-radius: 5%;
+    width: 70px;
+  }
+  .button
+  {
+    padding-left: 600px;
+    border: transparent;
+  }
+
+  .foothead
+  {
+    padding-bottom: 50px;
+    color: chocolate;
+  }
